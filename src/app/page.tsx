@@ -9,8 +9,14 @@ export default async function HomePage() {
 
   return (
     <main className="mx-auto w-full max-w-2xl flex-1 px-4 pb-28 pt-6 sm:pt-10">
-      <header className="mb-6">
+      <header className="mb-6 flex items-center justify-between">
         <h1 className="text-2xl font-semibold text-black">LinkOrganizer</h1>
+        <Link
+          href="/dashboard"
+          className="rounded-full border border-gray-300 px-3 py-1.5 text-sm text-gray-600 hover:bg-gray-100"
+        >
+          Dashboard
+        </Link>
       </header>
 
       {niches.length === 0 ? (
